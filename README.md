@@ -23,7 +23,3 @@ Modify your data in `./src/lib/products.json` to add, edit and remove the site p
 [Photo by Egor Myznik on Unsplash](https://unsplash.com/photos/CdRIW3QRdE4)
 
 [Photo by Adolfo Félix on Unsplash](https://unsplash.com/photos/RTEbHyyZtnU)
-
----
-
-[Made by zummon](https://zummon.page/)
