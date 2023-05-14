@@ -6,6 +6,7 @@
 	import { page } from "$app/stores";
 
 	export let data;
+
 </script>
 
 <div class="uk-padding uk-visible@s" />

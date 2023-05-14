@@ -1,16 +1,13 @@
 <script>
 	import Product from '$lib/Product.svelte';
-
 	export let data 
-
-  let title = 'Product'
-
+  	let title = 'Product'
 </script>
 
 <svelte:head>
 	<title>{title} - {data.sitename}</title>
 	<meta property="og:title" content={`${title} - ${data.sitename}`} />
-  <meta name="twitter:title" content={`${title} - ${data.sitename}`} />
+	<meta name="twitter:title" content={`${title} - ${data.sitename}`} />
 </svelte:head>
 
 <div class="uk-margin-top uk-margin-bottom" uk-filter="target: .js-filter">
