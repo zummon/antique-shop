@@ -1,4 +1,4 @@
-### [Demo](https://7cwsgf-5173.csb.app/)
+### [Codesandbox](https://codesandbox.io/p/github/zummon/antique-shop-sveltekit)
 
 - Change the site name in `./src/routes/+layout.server.js`
 - Change the site background in `./src/app.html`

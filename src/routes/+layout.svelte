@@ -43,14 +43,12 @@
 	<slot />
 	<!-- Footer -->
 	<div class="uk-text-center uk-margin-large-top uk-margin-large-bottom">
-		<a
-			class="uk-link-reset uk-text-large"
-			href="https://zummon.page/"
-			target="_blank"
+		<span
+			class="uk-text-muted uk-text-large"
 			style="font-family: 'Sacramento', cursive"
 		>
-			Made by zummon
-		</a>
+			Made by zummon (Teerapat Anantarattanachai)
+		</span>
 	</div>
 </div>
 <div class="uk-padding uk-visible@s" />
