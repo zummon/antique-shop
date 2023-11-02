@@ -1,14 +1,16 @@
 <script>
-	export let image, slug, title, price
+	export let image, slug, title, price;
 </script>
 
-<a href={`/product/${slug}`}
-	class="uk-display-block uk-inline-clip uk-transition-toggle uk-border-rounded uk-box-shadow-medium"
-	uk-tooltip={`${title} ${price}`}
->
-	<img
-		class="uk-transition-scale-up uk-transition-opaque"
-		alt=""
-		{...image}
-	/>
-</a>
+<abbr class="" title="{title} {price}">
+	<a
+		class="flex items-center overflow-clip transition rounded shadow-md group max-h-80 md:max-h-none"
+		href="/product/{slug}"
+	>
+		<img
+			class="group-hover:scale-110 group-focus:scale-110 object-cover object-center h-full w-full block transition duration-300"
+			src={image.src}
+			alt={image.alt}
+		/>
+	</a>
+</abbr>

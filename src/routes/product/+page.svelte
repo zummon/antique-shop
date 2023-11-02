@@ -1,34 +1,43 @@
 <script>
-	import Product from '$lib/Product.svelte';
-	export let data 
-  	let title = 'Product'
+	import Product from "../../lib/Product.svelte";
+	export let data;
+	let category = "";
 </script>
 
 <svelte:head>
-	<title>{title} - {data.sitename}</title>
-	<meta property="og:title" content={`${title} - ${data.sitename}`} />
-	<meta name="twitter:title" content={`${title} - ${data.sitename}`} />
+	<title>{data.title} - {data.sitename}</title>
+	<meta property="og:title" content={`${data.title} - ${data.sitename}`} />
+	<meta name="twitter:title" content={`${data.title} - ${data.sitename}`} />
 </svelte:head>
 
-<div class="uk-margin-top uk-margin-bottom" uk-filter="target: .js-filter">
-	<ul class="uk-subnav uk-subnav-divider uk-flex-center">
-		<li class="uk-active" uk-filter-control>
-			<a href="#">All</a>
+<ul class="divide-x flex flex-wrap justify-center mb-4 lg:mb-8">
+	<li class="">
+		<button
+			class="px-4 py-2 {category == '' ? 'text-sky-500' : ''}"
+			on:click={() => {
+				category = "";
+			}}>All</button
+		>
+	</li>
+	{#each data.categories as value, index (`category-${index}`)}
+		<li class="">
+			<button
+				class="px-4 py-2 {category == value ? 'text-sky-500' : ''}"
+				on:click={() => {
+					category = value;
+				}}>{value}</button
+			>
 		</li>
-		{#each data.categories as text, index (`category-${index}`)}
-			<li uk-filter-control="[data-category='{text}']">
-				<a href="#">{text}</a>
-			</li>
-		{/each}
-	</ul>
-	<div
-		class="js-filter uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-grid-small"
-		uk-grid="masonry: true"
-	>
-		{#each data.products as item, index (`product-${index}`)}
-			<div data-category={item.category}>
-				<Product {...item} />
-			</div>
-		{/each}
-	</div>
+	{/each}
+</ul>
+
+<div class="sm:columns-2 md:columns-3 lg:columns-4">
+	{#each data.products.filter((item) => {
+		if (category == "") return true;
+		return item.category == category;
+	}) as item, index (`product-${index}`)}
+		<div class="mb-4">
+			<Product {...item} />
+		</div>
+	{/each}
 </div>
