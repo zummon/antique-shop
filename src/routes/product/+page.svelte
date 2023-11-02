@@ -1,13 +1,15 @@
 <script>
 	import Product from "../../lib/Product.svelte";
+
 	export let data;
+
 	let category = "";
 </script>
 
 <svelte:head>
 	<title>{data.title} - {data.sitename}</title>
-	<meta property="og:title" content={`${data.title} - ${data.sitename}`} />
-	<meta name="twitter:title" content={`${data.title} - ${data.sitename}`} />
+	<meta property="og:title" content="{data.title} - {data.sitename}" />
+	<meta name="twitter:title" content="{data.title} - {data.sitename}" />
 </svelte:head>
 
 <ul class="divide-x flex flex-wrap justify-center mb-4 lg:mb-8">

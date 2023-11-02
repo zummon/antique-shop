@@ -6,8 +6,8 @@
 
 <svelte:head>
 	<title>{title} - {data.sitename}</title>
-	<meta property="og:title" content={`${title} - ${data.sitename}`} />
-	<meta name="twitter:title" content={`${title} - ${data.sitename}`} />
+	<meta property="og:title" content="{title} - {data.sitename}" />
+	<meta name="twitter:title" content="{title} - {data.sitename}" />
 	<meta name="description" content={description} />
 	<meta property="og:description" content={description} />
 	<meta name="twitter:description" content={description} />
