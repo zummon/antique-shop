@@ -8,34 +8,40 @@
 
 <svelte:head>
 	<title>{data.title} - {data.sitename}</title>
-	<meta property="og:title" content="{data.title} - {data.sitename}" />
-	<meta name="twitter:title" content="{data.title} - {data.sitename}" />
+	<meta property="og:title" content={`${data.title} - ${data.sitename}`} />
+	<meta name="twitter:title" content={`${data.title} - ${data.sitename}`} />
 </svelte:head>
 
-<ul class="divide-x flex flex-wrap justify-center mb-4 lg:mb-8">
+<ul class="divide-x-2 flex flex-wrap justify-center mb-4 lg:mb-8">
 	<li class="">
 		<button
-			class="px-4 py-2 {category == '' ? 'text-sky-500' : ''}"
+			class={`inline-block px-4 py-2 text-yellow-800 ${category == '' ? 'font-semibold' : ''}`}
 			on:click={() => {
 				category = "";
-			}}>All</button
+			}}
 		>
+			All
+		</button>
 	</li>
 	{#each data.categories as value, index (`category-${index}`)}
 		<li class="">
 			<button
-				class="px-4 py-2 {category == value ? 'text-sky-500' : ''}"
+				class={`inline-block px-4 py-2 text-yellow-800 ${category == value ? 'font-semibold' : ''}`}
 				on:click={() => {
 					category = value;
-				}}>{value}</button
+				}}
 			>
+				{value}
+			</button>
 		</li>
 	{/each}
 </ul>
 
 <div class="sm:columns-2 md:columns-3 lg:columns-4">
 	{#each data.products.filter((item) => {
-		if (category == "") return true;
+		if (category == "") {
+			return true;
+		}
 		return item.category == category;
 	}) as item, index (`product-${index}`)}
 		<div class="mb-4">

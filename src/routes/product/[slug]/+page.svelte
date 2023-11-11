@@ -6,8 +6,8 @@
 
 <svelte:head>
 	<title>{title} - {data.sitename}</title>
-	<meta property="og:title" content="{title} - {data.sitename}" />
-	<meta name="twitter:title" content="{title} - {data.sitename}" />
+	<meta property="og:title" content={`${title} - ${data.sitename}`} />
+	<meta name="twitter:title" content={`${title} - ${data.sitename}`} />
 	<meta name="description" content={description} />
 	<meta property="og:description" content={description} />
 	<meta name="twitter:description" content={description} />
@@ -22,11 +22,15 @@
 
 <div class="mb-4 lg:mb-8 text-right">
 	<button
-		class="bg-sky-500 text-white p-2 px-10 text-2xl rounded shadow-md text-center"
+		class="bg-yellow-800 text-white p-2 px-10 text-2xl rounded shadow-md text-center"
 	>
-		Purchese
+		<span class="">
+			Purchese
+		</span>
 		<hr class="opacity-50" />
-		{price}
+		<span class="font-custom">
+			{price}
+		</span>
 	</button>
 </div>
 

@@ -2,51 +2,52 @@
 	import "../app.css";
 
 	export let data;
+
+	let navs = [
+		{ path: '/', text: 'Home' },
+		{ path: '/about', text: 'About' },
+	]
 </script>
 
 <div class="max-w-5xl mx-auto bg-zinc-50 rounded shadow-lg">
 	<div class="p-4 lg:p-8">
 		<h2
-			class="text-zinc-500 text-4xl text-center mb-4 lg:mb-8"
-			style="font-family: 'Sacramento', cursive"
+			class="text-zinc-500 text-4xl text-center mb-4 lg:mb-8 cursor-default font-custom"
 		>
 			{data.sitename}
 		</h2>
 
-		<ul
-			class="flex gap-4 lg:gap-8 justify-center items-baseline border-b font-serif border-collapse"
+		<div
+			class="flex flex-wrap justify-center items-baseline font-serif"
 		>
-			<li
-				class="border-collapse {data.pathname === '/'
-					? 'border-b-2 border-sky-500'
-					: ''}"
-			>
-				<a href="/">Home</a>
-			</li>
-			<li
-				class="border-collapse {data.pathname === '/about'
-					? 'border-b-2 border-sky-500'
-					: ''}"
-			>
-				<a href="/about">About</a>
-			</li>
-			<li
-				class="border-collapse {data.pathname.startsWith('/product')
-					? 'border-b-2 border-sky-500'
-					: ''}"
+			<div class="border-b-2 grow px-3 py-1 lg:px-5 lg:py-3">&nbsp;</div>
+			{#each navs as item, index (`nav-${index}`)}
+				<div
+					class={`border-b-2 text-yellow-800 font-semibold px-3 py-1 lg:px-5 lg:py-3 ${data.pathname == item.path
+						? 'border-yellow-800'
+						: ''}`}
+				>
+					<a href={item.path}>{item.text}</a>
+				</div>
+			{/each}
+			<div
+				class={`border-b-2 text-yellow-800 font-semibold px-3 py-1 lg:px-5 lg:py-3 ${data.pathname.startsWith('/product')
+					? 'border-yellow-800'
+					: ''}`}
 			>
 				<a href="/product">Product</a>
-			</li>
-			<li
-				class="border-collapse {data.pathname === '/faq'
-					? 'border-b-2 border-sky-500'
-					: ''}"
+			</div>
+			<div
+				class={`border-b-2 text-yellow-800 font-semibold px-3 py-1 lg:px-5 lg:py-3 ${data.pathname == '/faq'
+					? 'border-yellow-800'
+					: ''}`}
 			>
 				<abbr class="no-underline" title="Frequently Asked Questions">
 					<a href="/faq">FAQ</a>
 				</abbr>
-			</li>
-		</ul>
+			</div>
+			<div class="border-b-2 grow px-3 py-1 lg:px-5 lg:py-3">&nbsp;</div>
+		</div>
 	</div>
 
 	<div class="p-4 lg:p-8 font-serif">
@@ -55,8 +56,7 @@
 
 	<div class="p-4 lg:p-8 text-center">
 		<span
-			class="text-zinc-500 text-2xl"
-			style="font-family: 'Sacramento', cursive"
+			class="text-zinc-500 text-2xl cursor-default font-custom"
 		>
 			Made by zummon (Teerapat Anantarattanachai)
 		</span>

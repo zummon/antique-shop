@@ -6,15 +6,15 @@
 
 <svelte:head>
 	<title>{data.title} - {data.sitename}</title>
-	<meta property="og:title" content="{data.title} - {data.sitename}" />
-	<meta name="twitter:title" content="{data.title} - {data.sitename}" />
+	<meta property="og:title" content={`${data.title} - ${data.sitename}`} />
+	<meta name="twitter:title" content={`${data.title} - ${data.sitename}`} />
 </svelte:head>
 
 <div class="md:columns-2 prose max-w-none mb-4 lg:mb-8">
 	<h1 class="">{data.title}</h1>
 	<p class="">
 		<a
-			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600"
+			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600 transition duration-300"
 			href="/#"
 		>
 			<span class="sr-only">uikit icon facebook</span>
@@ -25,7 +25,7 @@
 			>
 		</a>
 		<a
-			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600"
+			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600 transition duration-300"
 			href="/#"
 		>
 			<span class="sr-only">uikit icon instagram</span>
@@ -38,7 +38,7 @@
 			>
 		</a>
 		<a
-			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600"
+			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600 transition duration-300"
 			href="/#"
 		>
 			<span class="sr-only">uikit icon pinterest</span>
@@ -50,7 +50,7 @@
 			>
 		</a>
 		<a
-			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600"
+			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600 transition duration-300"
 			href="/#"
 		>
 			<span class="sr-only">uikit icon twitter</span>
@@ -61,7 +61,7 @@
 			>
 		</a>
 		<a
-			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600"
+			class="rounded-full inline-flex justify-center items-center w-9 h-9 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 fill-gray-500 hover:fill-gray-600 focus:fill-gray-600 transition duration-300"
 			href="/#"
 		>
 			<span class="sr-only">uikit icon youtube</span>

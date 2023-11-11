@@ -4,8 +4,8 @@
 
 <svelte:head>
 	<title>{data.title} - {data.sitename}</title>
-	<meta property="og:title" content="{data.title} - {data.sitename}" />
-	<meta name="twitter:title" content="{data.title} - {data.sitename}" />
+	<meta property="og:title" content={`${data.title} - ${data.sitename}`} />
+	<meta name="twitter:title" content={`${data.title} - ${data.sitename}`} />
 </svelte:head>
 
 <div class="md:columns-2 prose max-w-none mb-4 lg:mb-8">

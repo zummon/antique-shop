@@ -7,7 +7,7 @@
 			"alt": "Photo by Mick Haupt on Unsplash"
 		},
 		"slug": "compass",
-		"price": "$999",
+		"price": "$888",
 		"title": "Compass",
 		"category": "Small"
 	},
@@ -31,7 +31,7 @@
 			"alt": "Photo by Ripple Qian on Unsplash"
 		},
 		"slug": "lamp",
-		"price": "$999",
+		"price": "$92399",
 		"title": "Lamp",
 		"category": "Large"
 	},
@@ -43,7 +43,7 @@
 			"alt": "Photo by Egor Myznik on Unsplash"
 		},
 		"slug": "door-bell",
-		"price": "$999",
+		"price": "$3333",
 		"title": "Door bell",
 		"category": "Small"
 	},
@@ -55,7 +55,7 @@
 			"alt": "Photo by Adolfo Félix on Unsplash"
 		},
 		"slug": "clothes-maker",
-		"price": "$999",
+		"price": "$4321",
 		"title": "Clothes maker",
 		"category": "Large"
 	},
@@ -66,7 +66,7 @@
 			"alt": "compass"
 		},
 		"slug": "compass-2",
-		"price": "$999",
+		"price": "$2233",
 		"title": "Compass",
 		"category": "Small"
 	},
@@ -77,7 +77,7 @@
 			"alt": "typing-machine"
 		},
 		"slug": "typing-machine-2",
-		"price": "$999",
+		"price": "$556",
 		"title": "Typing machine",
 		"category": "Medium"
 	},
@@ -88,7 +88,7 @@
 			"alt": "lamp"
 		},
 		"slug": "lamp-2",
-		"price": "$999",
+		"price": "$890",
 		"title": "Lamp",
 		"category": "Large"
 	}
