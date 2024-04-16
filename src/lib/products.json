@@ -31,7 +31,7 @@
 			"alt": "Photo by Ripple Qian on Unsplash"
 		},
 		"slug": "lamp",
-		"price": "$92399",
+		"price": "$92,399",
 		"title": "Lamp",
 		"category": "Large"
 	},
@@ -43,7 +43,7 @@
 			"alt": "Photo by Egor Myznik on Unsplash"
 		},
 		"slug": "door-bell",
-		"price": "$3333",
+		"price": "$3,333",
 		"title": "Door bell",
 		"category": "Small"
 	},
@@ -55,7 +55,7 @@
 			"alt": "Photo by Adolfo Félix on Unsplash"
 		},
 		"slug": "clothes-maker",
-		"price": "$4321",
+		"price": "$4,321",
 		"title": "Clothes maker",
 		"category": "Large"
 	},
@@ -66,7 +66,7 @@
 			"alt": "compass"
 		},
 		"slug": "compass-2",
-		"price": "$2233",
+		"price": "$2,233",
 		"title": "Compass",
 		"category": "Small"
 	},

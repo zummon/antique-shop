@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         'custom': "'Sacramento', cursive",
+        'serif': "'Platypi', serif",
       },
     },
   },

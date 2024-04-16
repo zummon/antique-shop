@@ -1,4 +1,6 @@
 <script>
+	import { cart } from '.././../../lib/state'
+
 	export let data;
 
 	let { description, image, price, title } = data.product;
@@ -22,13 +24,16 @@
 
 <div class="mb-4 lg:mb-8 text-right">
 	<button
-		class="bg-yellow-800 text-white p-2 px-10 text-2xl rounded shadow-md text-center"
+		class="bg-yellow-800 text-white p-2 px-10 text-2xl rounded shadow-md text-center" on:click={() => {
+			$cart.push(data.product)
+			$cart = $cart
+		}}
 	>
-		<span class="">
-			Purchese
+		<span class="font-light opacity-75">
+			Purchase
 		</span>
 		<hr class="opacity-50" />
-		<span class="font-custom">
+		<span class="font-custom font-bold">
 			{price}
 		</span>
 	</button>

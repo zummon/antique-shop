@@ -1,5 +1,6 @@
 <script>
 	import "../app.css";
+	import { cart } from '../lib/state'
 
 	export let data;
 
@@ -46,6 +47,9 @@
 					<a href="/faq">FAQ</a>
 				</abbr>
 			</div>
+			{#if $cart.length}
+				<div class="border-b-2 text-yellow-800 font-semibold px-3 py-1 lg:px-5 lg:py-3">Purchased {$cart.length}</div>
+			{/if}
 			<div class="border-b-2 grow px-3 py-1 lg:px-5 lg:py-3">&nbsp;</div>
 		</div>
 	</div>
@@ -56,7 +60,7 @@
 
 	<div class="p-4 lg:p-8 text-center">
 		<span
-			class="text-zinc-500 text-2xl cursor-default font-custom"
+			class="text-zinc-400 italic cursor-default font-serif font-light"
 		>
 			Made by zummon (Teerapat Anantarattanachai)
 		</span>
