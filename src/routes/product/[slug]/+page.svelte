@@ -1,9 +1,9 @@
 <script>
-	import { cart } from '.././../../lib/state'
+	import { store } from '../../../lib/store.svelte'
 
-	export let data;
+	let { data } = $props();
 
-	let { description, image, price, title } = data.product;
+	let { description, imageSrc, imageAlt, price, title } = data.product;
 </script>
 
 <svelte:head>
@@ -13,8 +13,8 @@
 	<meta name="description" content={description} />
 	<meta property="og:description" content={description} />
 	<meta name="twitter:description" content={description} />
-	<meta property="og:image" content={image.src} />
-	<meta name="twitter:image" content={image.src} />
+	<meta property="og:image" content={imageSrc} />
+	<meta name="twitter:image" content={imageSrc} />
 </svelte:head>
 
 <div class="mb-4 lg:mb-8">
@@ -24,9 +24,8 @@
 
 <div class="mb-4 lg:mb-8 text-right">
 	<button
-		class="bg-yellow-800 text-white p-2 px-10 text-2xl rounded shadow-md text-center" on:click={() => {
-			$cart.push(data.product)
-			$cart = $cart
+		class="bg-yellow-800 text-white p-2 px-10 text-2xl rounded shadow-md text-center" onclick={() => {
+			store.cart.push(data.product)
 		}}
 	>
 		<span class="font-light opacity-75">
@@ -39,4 +38,4 @@
 	</button>
 </div>
 
-<img class="mx-auto rounded shadow-md" src={image.src} alt={image.alt} />
+<img class="mx-auto rounded shadow-md" src={imageSrc} alt={imageAlt} />

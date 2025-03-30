@@ -1,8 +1,8 @@
 <script>
 	import "../app.css";
-	import { cart } from '../lib/state'
+	import { store } from '../lib/store.svelte'
 
-	export let data;
+	let { data, children } = $props();
 
 	let navs = [
 		{ path: '/', text: 'Home' },
@@ -47,22 +47,29 @@
 					<a href="/faq">FAQ</a>
 				</abbr>
 			</div>
-			{#if $cart.length}
-				<div class="border-b-2 text-yellow-800 font-semibold px-3 py-1 lg:px-5 lg:py-3">Purchased {$cart.length}</div>
+			{#if store.cart.length}
+				<div class={`border-b-2 text-yellow-800 font-semibold px-3 py-1 lg:px-5 lg:py-3 ${data.pathname == '/cart'
+				? 'border-yellow-800'
+				: ''}`}>
+					<a class="" href="/cart">
+						Purchased {store.cart.length}
+					</a>
+				</div>
 			{/if}
 			<div class="border-b-2 grow px-3 py-1 lg:px-5 lg:py-3">&nbsp;</div>
 		</div>
 	</div>
 
 	<div class="p-4 lg:p-8 font-serif">
-		<slot />
+		{@render children()}
 	</div>
 
 	<div class="p-4 lg:p-8 text-center">
 		<span
 			class="text-zinc-400 italic cursor-default font-serif font-light"
 		>
-			Made by zummon (Teerapat Anantarattanachai)
+			Made by <a class="underline" target="_blank" href="https://github.com/zummon">Teerapat Anantarattanachai</a><br>
+			Something breaks, needs upgrade. Let me know
 		</span>
 	</div>
 </div>

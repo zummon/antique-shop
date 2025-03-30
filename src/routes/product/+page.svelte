@@ -1,9 +1,9 @@
 <script>
 	import Product from "../../lib/Product.svelte";
 
-	export let data;
+	let { data } = $props();
 
-	let category = "";
+	let category = $state("");
 </script>
 
 <svelte:head>
@@ -16,7 +16,7 @@
 	<li class="">
 		<button
 			class={`inline-block px-4 py-2 text-yellow-800 ${category == '' ? 'font-semibold' : ''}`}
-			on:click={() => {
+			onclick={() => {
 				category = "";
 			}}
 		>
@@ -27,7 +27,7 @@
 		<li class="">
 			<button
 				class={`inline-block px-4 py-2 text-yellow-800 ${category == value ? 'font-semibold' : ''}`}
-				on:click={() => {
+				onclick={() => {
 					category = value;
 				}}
 			>

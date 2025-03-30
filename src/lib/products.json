@@ -1,95 +1,82 @@
 [
 	{
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
-		"image": {
-			"url": "https://unsplash.com/photos/tJefy_Vu7Po",
-			"src": "https://source.unsplash.com/tJefy_Vu7Po/640x480",
-			"alt": "Photo by Mick Haupt on Unsplash"
-		},
 		"slug": "compass",
+		"title": "Compass",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
+		"category": "Small",
 		"price": "$888",
-		"title": "Compass",
-		"category": "Small"
+		"imageSrc": "https://i.imgur.com/08wcvDC.jpeg",
+		"imageAlt": "Photo by Mick Haupt on Unsplash",
+		"imageUrl": "https://unsplash.com/photos/tJefy_Vu7Po"
 	},
 	{
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
-		"image": {
-			"url": "https://unsplash.com/photos/mk7D-4UCfmg",
-			"src": "https://source.unsplash.com/mk7D-4UCfmg/640x940",
-			"alt": "Photo by Florian Klauer on Unsplash"
-		},
 		"slug": "typing-machine",
+		"title": "Typing machine",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
+		"category": "Medium",
 		"price": "$999",
-		"title": "Typing machine",
-		"category": "Medium"
+		"imageSrc": "https://i.imgur.com/HdHdtcu.jpeg",
+		"imageAlt": "Photo by Florian Klauer on Unsplash",
+		"imageUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
 	},
 	{
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
-		"image": {
-			"url": "https://unsplash.com/photos/BdvX-f_dJOk",
-			"src": "https://source.unsplash.com/BdvX-f_dJOk/640x940",
-			"alt": "Photo by Ripple Qian on Unsplash"
-		},
 		"slug": "lamp",
+		"title": "Lamp",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
+		"category": "Large",
 		"price": "$92,399",
-		"title": "Lamp",
-		"category": "Large"
+		"imageSrc": "https://i.imgur.com/vaWgorI.jpeg",
+		"imageAlt": "Photo by Ripple Qian on Unsplash",
+		"imageUrl": "https://unsplash.com/photos/BdvX-f_dJOk"
 	},
 	{
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
-		"image": {
-			"url": "https://unsplash.com/photos/CdRIW3QRdE4",
-			"src": "https://source.unsplash.com/CdRIW3QRdE4/640x426",
-			"alt": "Photo by Egor Myznik on Unsplash"
-		},
 		"slug": "door-bell",
-		"price": "$3,333",
 		"title": "Door bell",
-		"category": "Small"
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
+		"category": "Small",
+		"price": "$3,333",
+		"imageSrc": "https://i.imgur.com/5RNkUxX.jpeg",
+		"imageAlt": "Photo by Egor Myznik on Unsplash",
+		"imageUrl": "https://unsplash.com/photos/CdRIW3QRdE4"
 	},
 	{
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
-		"image": {
-			"url": "https://unsplash.com/photos/RTEbHyyZtnU",
-			"src": "https://source.unsplash.com/RTEbHyyZtnU/640x427",
-			"alt": "Photo by Adolfo Félix on Unsplash"
-		},
 		"slug": "clothes-maker",
-		"price": "$4,321",
 		"title": "Clothes maker",
-		"category": "Large"
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
+		"category": "Large",
+		"price": "$4,321",
+		"imageSrc": "https://i.imgur.com/XnWAYvJ.jpeg",
+		"imageAlt": "Photo by Adolfo Félix on Unsplash",
+		"imageUrl": "https://unsplash.com/photos/RTEbHyyZtnU"
 	},
 	{
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
-		"image": {
-			"src": "https://source.unsplash.com/tJefy_Vu7Po/640x480",
-			"alt": "compass"
-		},
 		"slug": "compass-2",
-		"price": "$2,233",
 		"title": "Compass",
-		"category": "Small"
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
+		"category": "Small",
+		"price": "$2,233",
+		"imageSrc": "https://i.imgur.com/08wcvDC.jpeg",
+		"imageAlt": "Photo by Mick Haupt on Unsplash",
+		"imageUrl": "https://unsplash.com/photos/tJefy_Vu7Po"
 	},
 	{
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
-		"image": {
-			"src": "https://source.unsplash.com/mk7D-4UCfmg/640x940",
-			"alt": "typing-machine"
-		},
 		"slug": "typing-machine-2",
-		"price": "$556",
 		"title": "Typing machine",
-		"category": "Medium"
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
+		"category": "Medium",
+		"price": "$556",
+		"imageSrc": "https://i.imgur.com/HdHdtcu.jpeg",
+		"imageAlt": "Photo by Florian Klauer on Unsplash",
+		"imageUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
 	},
 	{
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
-		"image": {
-			"src": "https://source.unsplash.com/BdvX-f_dJOk/640x940",
-			"alt": "lamp"
-		},
 		"slug": "lamp-2",
-		"price": "$890",
 		"title": "Lamp",
-		"category": "Large"
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
+		"category": "Large",
+		"price": "$890",
+		"imageSrc": "https://i.imgur.com/vaWgorI.jpeg",
+		"imageAlt": "Photo by Ripple Qian on Unsplash",
+		"imageUrl": "https://unsplash.com/photos/BdvX-f_dJOk"
 	}
 ]
