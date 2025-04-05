@@ -15,25 +15,26 @@
 	})
 </script>
 
-<div class="mb-4 lg:mb-8 text-center">
-	<button
-		class="bg-yellow-800 text-white p-2 px-10 text-2xl rounded shadow-md text-center" onclick={() => {
-			
-		}}
-	>
-		<span class="font-light opacity-75">
-			Total
-		</span>
-		<hr class="opacity-50" />
-		<span class="font-custom font-bold">
-			{#each totals as [cur, total], index (`sum-${index}`)}
-				{cur}{numerize(total)}
-			{/each}
-		</span>
-	</button>
-</div>
-
 {#if store.cart.length}
+	<div class="mb-4 lg:mb-8 text-center">
+		<button
+			class="bg-yellow-800 text-white p-2 px-10 text-2xl rounded shadow-md text-center" onclick={() => {
+				
+			}}
+		>
+			<span class="font-light opacity-75">
+				Total
+			</span>
+			<hr class="opacity-50" />
+			<span class="font-custom font-bold">
+				{#each totals as [cur, total], index (`sum-${index}`)}
+					{#if index > 0}<br>{/if}
+					{cur}{numerize(total)}
+				{/each}
+			</span>
+		</button>
+	</div>
+
 	<div class="sm:columns-2 md:columns-3 lg:columns-4">
 		{#each store.cart as item, index (`product-${index}`)}
 			<div class="mb-4">

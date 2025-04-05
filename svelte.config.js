@@ -4,12 +4,12 @@ import adapter from "@sveltejs/adapter-static";
 const config = {
 	kit: {
 		adapter: adapter(),
-	},
-	output: {
-		bundleStrategy: 'single',
-	},
-	paths: {
-		relative: false,
+		output: {
+			bundleStrategy: 'single',
+		},
+		paths: {
+			relative: false,
+		},
 	},
 };
 

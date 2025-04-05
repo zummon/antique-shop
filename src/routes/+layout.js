@@ -1,3 +1,5 @@
+export const prerender = true;
+
 import products from '../lib/products.json'
 
 export const load = async ({ url }) => {
