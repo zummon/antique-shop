@@ -4,8 +4,8 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        'custom': "'Sacramento', cursive",
-        'serif': "'Platypi', serif",
+        'custom': ['"Sacramento"', "cursive"],
+        'serif': ['"Platypi"', "serif"],
       },
     },
   },

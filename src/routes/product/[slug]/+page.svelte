@@ -1,25 +1,26 @@
 <script>
 	import { store } from '../../../lib/store.svelte'
+	import { numerize } from '../../../lib/format.js'
 
 	let { data } = $props();
 
-	let { description, imageSrc, imageAlt, price, title } = data.product;
+	let { product } = data;
 </script>
 
 <svelte:head>
-	<title>{title} - {data.sitename}</title>
-	<meta property="og:title" content={`${title} - ${data.sitename}`} />
-	<meta name="twitter:title" content={`${title} - ${data.sitename}`} />
-	<meta name="description" content={description} />
-	<meta property="og:description" content={description} />
-	<meta name="twitter:description" content={description} />
-	<meta property="og:image" content={imageSrc} />
-	<meta name="twitter:image" content={imageSrc} />
+	<title>{product.title} - {data.sitename}</title>
+	<meta property="og:title" content={`${product.title} - ${data.sitename}`} />
+	<meta name="twitter:title" content={`${product.title} - ${data.sitename}`} />
+	<meta name="description" content={product.description} />
+	<meta property="og:description" content={product.description} />
+	<meta name="twitter:description" content={product.description} />
+	<meta property="og:image" content={product.imageSrc} />
+	<meta name="twitter:image" content={product.imageSrc} />
 </svelte:head>
 
 <div class="mb-4 lg:mb-8">
-	<h1 class="text-4xl text-black mb-4">{title}</h1>
-	<p class="">{description}</p>
+	<h1 class="text-4xl text-black mb-4">{product.title}</h1>
+	<p class="">{product.description}</p>
 </div>
 
 <div class="mb-4 lg:mb-8 text-right">
@@ -33,9 +34,9 @@
 		</span>
 		<hr class="opacity-50" />
 		<span class="font-custom font-bold">
-			{price}
+			{product.cur}{numerize(product.price)}
 		</span>
 	</button>
 </div>
 
-<img class="mx-auto rounded shadow-md" src={imageSrc} alt={imageAlt} />
+<img class="mx-auto rounded shadow-md" src={product.imageSrc} alt={product.imageAlt} />

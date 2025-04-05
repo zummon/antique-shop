@@ -5,6 +5,12 @@ const config = {
 	kit: {
 		adapter: adapter(),
 	},
+	output: {
+		bundleStrategy: 'single',
+	},
+	paths: {
+		relative: false,
+	},
 };
 
 export default config;

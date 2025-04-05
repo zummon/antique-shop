@@ -4,7 +4,8 @@
 		"title": "Compass",
 		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
 		"category": "Small",
-		"price": "$888",
+		"price": 888,
+		"cur": "$",
 		"imageSrc": "https://i.imgur.com/08wcvDC.jpeg",
 		"imageAlt": "Photo by Mick Haupt on Unsplash",
 		"imageUrl": "https://unsplash.com/photos/tJefy_Vu7Po"
@@ -14,7 +15,8 @@
 		"title": "Typing machine",
 		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
 		"category": "Medium",
-		"price": "$999",
+		"price": 999,
+		"cur": "$",
 		"imageSrc": "https://i.imgur.com/HdHdtcu.jpeg",
 		"imageAlt": "Photo by Florian Klauer on Unsplash",
 		"imageUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
@@ -24,7 +26,8 @@
 		"title": "Lamp",
 		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
 		"category": "Large",
-		"price": "$92,399",
+		"price": 92399,
+		"cur": "$",
 		"imageSrc": "https://i.imgur.com/vaWgorI.jpeg",
 		"imageAlt": "Photo by Ripple Qian on Unsplash",
 		"imageUrl": "https://unsplash.com/photos/BdvX-f_dJOk"
@@ -34,7 +37,8 @@
 		"title": "Door bell",
 		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
 		"category": "Small",
-		"price": "$3,333",
+		"price": 3333,
+		"cur": "$",
 		"imageSrc": "https://i.imgur.com/5RNkUxX.jpeg",
 		"imageAlt": "Photo by Egor Myznik on Unsplash",
 		"imageUrl": "https://unsplash.com/photos/CdRIW3QRdE4"
@@ -44,7 +48,8 @@
 		"title": "Clothes maker",
 		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
 		"category": "Large",
-		"price": "$4,321",
+		"price": 4321,
+		"cur": "$",
 		"imageSrc": "https://i.imgur.com/XnWAYvJ.jpeg",
 		"imageAlt": "Photo by Adolfo Félix on Unsplash",
 		"imageUrl": "https://unsplash.com/photos/RTEbHyyZtnU"
@@ -54,7 +59,8 @@
 		"title": "Compass",
 		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
 		"category": "Small",
-		"price": "$2,233",
+		"price": 2233,
+		"cur": "$",
 		"imageSrc": "https://i.imgur.com/08wcvDC.jpeg",
 		"imageAlt": "Photo by Mick Haupt on Unsplash",
 		"imageUrl": "https://unsplash.com/photos/tJefy_Vu7Po"
@@ -64,7 +70,8 @@
 		"title": "Typing machine",
 		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
 		"category": "Medium",
-		"price": "$556",
+		"price": 556,
+		"cur": "$",
 		"imageSrc": "https://i.imgur.com/HdHdtcu.jpeg",
 		"imageAlt": "Photo by Florian Klauer on Unsplash",
 		"imageUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
@@ -74,7 +81,8 @@
 		"title": "Lamp",
 		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste facilis, delectus dolor tempora natus quibusdam labore quia facere! Debitis corporis corrupti ab, sit aliquam at.",
 		"category": "Large",
-		"price": "$890",
+		"price": 890,
+		"cur": "$",
 		"imageSrc": "https://i.imgur.com/vaWgorI.jpeg",
 		"imageAlt": "Photo by Ripple Qian on Unsplash",
 		"imageUrl": "https://unsplash.com/photos/BdvX-f_dJOk"

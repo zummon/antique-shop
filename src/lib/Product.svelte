@@ -1,8 +1,9 @@
 <script>
+	import { numerize } from '../lib/format.js'
 	let props = $props();
 </script>
 
-<abbr class="" title={`${props.title} ${props.price}`}>
+<abbr class="" title={`${props.title} ${props.cur}${numerize(props.price)}`}>
 	<a
 		class="flex items-center overflow-clip transition rounded shadow-md group max-h-80 md:max-h-none"
 		href={`/product/${props.slug}`}
